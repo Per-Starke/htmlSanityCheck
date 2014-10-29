@@ -23,12 +23,12 @@ class URLUtil {
 
     }
 
+
     /**
      * Checks if this String represents a local resource, either:
      *   (1) "file://path/filename.ext" or
      *   (2) contains a path-separator, e.g. "directory/filename.ext" or
-     *   (3) is directory with
-     *   (3) "directory"
+     *   (3) is directory
      */
     public static boolean isLocalResource(String link) {
         if (URLUtil.isRemoteURL(link))
